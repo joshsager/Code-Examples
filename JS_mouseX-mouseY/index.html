@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+	<title>Mouse X Position</title>
+		<script>
+			//document.addEventListener("mousedown", handleMove, false);
+			document.onmousedown = function(){getMousePosition(event)}
+			
+			function MouseEvent(e){
+				if(e){
+					this.e = e;
+				}else{
+					this.e = window.event;
+				}
+				if(e.pageX){
+					this.x =e.pageX;
+				}else{
+					this.x=e.clientX;
+				}
+				if(e.pageY){
+					this.y=e.pageY;
+				}else{
+					this.y=e.clientY;
+				}
+				if(e.target){
+					this.target = e.target;
+				}else{
+					this.target = e.srcElement;
+				}
+				
+			}
+			
+			
+			function getMousePosition(evt){
+				var e = new MouseEvent(evt);
+				document.getElementById("box").innerHTML = "Mouse X Position: " + e.x + "<br />" ;
+				document.getElementById("box").innerHTML += "Mouse Y Position: " + e.y ;
+			}
+		</script>
+	</head>
+	<body>
+		<div id="box">Click anywhere to get mouseX and mouseY coordinates</div>
+	</body>
+</html>
