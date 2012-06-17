@@ -1,0 +1,164 @@
+.ball{
+ border-radius:20px;
+ height: 40px;
+ width:40px;
+ background-color: #f00;
+ display: block;
+ position: relative;
+ top:150px;
+ margin: 0 auto;
+}
+
+.squashed{
+  height: 10px;
+  width:40px;
+}
+
+.stretched{
+  width:10px;
+  height:40px;
+}
+
+
+.ballBounce{
+  border-radius:20px;
+  -webkit-border-radius: 20px;
+  -webkit-animation: BALLBOUNCE;
+  -webkit-animation-duration: 1.5s;
+
+
+}
+
+@-webkit-keyframes BALLBOUNCE{
+
+  0%{
+    /*START*/
+    top:150px;
+    width:40px;
+    height:40px;
+    
+  }
+  5%{
+    /* ANTICIPATION  */
+    top:120px;
+    width:20px;
+    height:70px;
+    
+  }
+  18%{
+    /* ANTICIPATION-HOLD */
+    top:120px;
+    width:20px;
+    height:70px;
+    
+  }
+  20%{
+    /* SQUASH */
+    top:190px;
+    height:5px;
+    width:80px;
+    
+  }
+  
+  30%{
+    /* SQUASH-HOLD */
+    top:190px;
+    height:5px;
+    width:80px;
+    
+  }
+  32%{
+    /*STRETCH*/
+    top:120px;
+    width:10px;
+    height:80px;
+    
+  }
+  
+  38%{
+    /*STRETCH-HOLD*/
+    top:120px;
+    width:10px;
+    height:80px;
+    
+  }
+  
+  40%{
+    /* ALMOST TOP OF ARC EASE IN*/
+    top:11px;
+    
+  }
+  50%{
+    /*TOP OF ARC*/
+    top:10px;
+    width:40px;
+    height:40px;
+    
+  }
+  60%{
+    /* ALMOST TOP OF ARC EASE OUT*/
+    top:11px;
+    
+  }
+    
+  68%{
+    /*STRETCH*/
+    top:150px;
+    width:10px;
+    height:60px;
+    
+  }
+  70%{
+    /*SQUASH*/
+    top:190px;
+    height:3px;
+    width:80px;
+    
+  }
+  80%{
+    /*SQUASH-HOLD*/
+    top:190px;
+    height:3px;
+    width:80px;
+    
+  }
+  84%{
+    /* STRETCH */
+    top:130px;
+    width:20px;
+    height:60px;
+    
+  }
+  
+ 88%{
+    /* STRETCH */
+    top:160px;
+    width:60px;
+    height:30px;
+    
+  }
+ 92%{
+    /* STRETCH */
+    top:140px;
+    width:30px;
+    height:50px;
+    
+  }
+  
+ 96%{
+    /*END*/
+    top:150px;
+    width:40px;
+    height:40px;
+    
+  }
+  
+  100%{
+    /*END*/
+    top:150px;
+    width:40px;
+    height:40px;
+    
+  }
+
+}
