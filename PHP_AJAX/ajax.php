@@ -1,5 +1,6 @@
 <?php
 
+// COMMUNICATES WITH HTML FILE
 if($_GET['name']=="Jordan"){
 
 echo "OMG THIS ACTUALLY HAPPENED SHAKE & BAKE!";
