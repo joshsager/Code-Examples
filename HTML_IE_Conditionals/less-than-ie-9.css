@@ -1,0 +1,2 @@
+body:before{content: "Less than IE 9 is being used";}
+body{background: orange;}

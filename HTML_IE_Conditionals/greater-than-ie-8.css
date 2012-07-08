@@ -1,0 +1,2 @@
+body:before{content: "Greater than IE 8 is being used";}
+body{background: yellow;}
