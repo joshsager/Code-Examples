@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Insert Before Example</title>
+		<script>
+			onload = insertTagBefore;
+		
+		
+			function insertTagBefore(){
+				// CREATE A LI TAG
+				var list = document.createElement("li");
+				list.innerHTML = "New Item";
+				
+				// CREATE A REFERENCE TO THE 3rd LIST ITEM
+				var destination = document.getElementsByTagName("li")[2];
+				
+				// INSERT THE NEW LIST ITEM BEFORE THE 3rd LIST ITEM
+				destination.parentNode.insertBefore(list,destination);
+			}
+		</script>
+		<body>
+			<ol>
+				<li>Item Number 1</li>
+				<li>Item Number 2</li>
+				<li>Item Number 3</li>
+				<li>Item Number 4</li>
+			</ol>
+		</body>
+	</head>
+</html>
