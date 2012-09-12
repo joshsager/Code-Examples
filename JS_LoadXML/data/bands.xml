@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bands>
+  <band>
+  	<name>Beatles</name>
+	<song>Yellow Sub</song>
+  </band>
+  <band>
+  	<name>Lamb of God</name>
+	<song>Black label</song>
+  </band>
+  <band>
+  	<name>Voltaire</name>
+	<song>The sea</song>
+  </band>
+  <band>
+  	<name>Geto Boys</name>
+	<song>Still</song>
+  </band>
+  <band>
+  	<name>Ok Go</name>
+	<song>Here We Go Again</song>
+  </band>
+</bands>
