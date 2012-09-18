@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JavaScript Hide / Show Demo</title>
+		<link href="css/reset.css" rel="stylesheet" />
+		<link href="css/styles.css" rel="stylesheet" />
+		<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+	</head>
+	<body>
+		<header><h1>JavaScript Hide / Show Demo</h1></header>
+		<nav>
+			<ol>
+				<li><a id="article1-btn" onclick="gotoArticle1()">Article 1</a></li>
+				<li><a id="article2-btn" onclick="gotoArticle2()">Article 2</a></li>
+				<li><a id="article3-btn" onclick="gotoArticle3()">Article 3</a></li>
+			</ol>
+		</nav>
+		
+		<section>
+			<article id="article1">
+				<header><h1>Section 1 Stuff</h1></header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet leo ut velit commodo accumsan. Vivamus accumsan purus nec erat tincidunt eu pharetra nisl venenatis. Duis nec tellus a risus vestibulum gravida et nec nunc. Vestibulum elit nisl, auctor vel auctor ut, varius sit amet nisi. Nullam erat arcu, volutpat faucibus elementum sed, molestie sit amet mauris. Integer eu arcu ac ipsum mattis mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget turpis vitae tortor euismod aliquam. Sed congue egestas tortor sed placerat. Etiam tempor viverra tortor, nec viverra purus sollicitudin id.</p>
+			</article>
+		
+			<article id="article2">
+				<header><h1>Section 2 Stuff</h1></header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet leo ut velit commodo accumsan. Vivamus accumsan purus nec erat tincidunt eu pharetra nisl venenatis. Duis nec tellus a risus vestibulum gravida et nec nunc. Vestibulum elit nisl, auctor vel auctor ut, varius sit amet nisi. Nullam erat arcu, volutpat faucibus elementum sed, molestie sit amet mauris. Integer eu arcu ac ipsum mattis mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget turpis vitae tortor euismod aliquam. Sed congue egestas tortor sed placerat. Etiam tempor viverra tortor, nec viverra purus sollicitudin id.</p>
+			</article>
+		
+			<article id="article3">
+				<header><h1>Section 3 Stuff</h1></header>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean imperdiet leo ut velit commodo accumsan. Vivamus accumsan purus nec erat tincidunt eu pharetra nisl venenatis. Duis nec tellus a risus vestibulum gravida et nec nunc. Vestibulum elit nisl, auctor vel auctor ut, varius sit amet nisi. Nullam erat arcu, volutpat faucibus elementum sed, molestie sit amet mauris. Integer eu arcu ac ipsum mattis mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Pellentesque eget turpis vitae tortor euismod aliquam. Sed congue egestas tortor sed placerat. Etiam tempor viverra tortor, nec viverra purus sollicitudin id.</p>
+			</article>
+		</section>
+		
+		<footer>
+			Copyright Stuffs
+		</footer>
+		<script>
+		function gotoArticle1(){
+			$('html,body').animate({scrollTop: $("#article1").offset().top},500);
+		}
+		function gotoArticle2(){
+			$('html,body').animate({scrollTop: $("#article2").offset().top},500);
+		}
+		function gotoArticle3(){
+			$('html,body').animate({scrollTop: $("#article3").offset().top},500);
+		}
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+

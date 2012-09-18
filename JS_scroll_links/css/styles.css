@@ -1,0 +1,10 @@
+body{width: 960px; margin: 0 auto;}
+h1{font-size: 32px; text-align: center; margin-bottom: .5em;}
+nav{width: 200px; float: left; position: fixed;}
+li{background: #67affb; height: 35px; border-radius: 15px; margin-bottom: 10px; text-align: center; -webkit-box-sizing: border-box; padding-top:10px;
+	font-family: sans-serif; color: white; text-transform: uppercase;
+}
+a{text-decoration: none; color: white;}
+a:hover{color:yellow; cursor: pointer;}
+section{background: yellow; width:600px; float: left; -webkit-box-sizing: border-box; padding: 20px; margin-left: 200px;}
+footer{clear: both; text-align: center;}

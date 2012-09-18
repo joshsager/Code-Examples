@@ -1,12 +1,9 @@
 // JavaScript Document
 
 onload = init;
-var bands;
-var bandsArray = new Array();
 
 function init(){
 	loadXML();
-	sortXML();
 	outputXML();
 }
 
@@ -25,19 +22,13 @@ function loadXML(){
 	bands = xml.responseXML;
 }
 
-function sortXML(){
-	for(i=0; i<bands.getElementsByTagName("name").length; i++){
-		bandsArray[i] ={name:bands.getElementsByTagName("name")[i].childNodes[0].nodeValue,
-						song:bands.getElementsByTagName("song")[i].childNodes[0].nodeValue};	
-	}
-}
-
 function outputXML(){
-	var message ="";
-	for(i=0; i<bandsArray.length; i++){
-		message += bandsArray[i].name +"<br />";
-		message += bandsArray[i].song +"<br />";
+	var message ="<ul>";
+	for(i=0; i<bands.getElementsByTagName("name").length; i++){
+		message += "<li>Artist: "+ bands.getElementsByTagName("name")[i].childNodes[0].nodeValue +"</li>";
+		message += "<li>Song: "+ bands.getElementsByTagName("song")[i].childNodes[0].nodeValue +"</li>";
 	}
+	message += "</ul>";
 	
 	document.getElementById('content').innerHTML = message;
 }
