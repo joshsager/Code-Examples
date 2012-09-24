@@ -1,11 +1,12 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 
 	<head>
+	<meta charset="utf-8" />
 	<title>Get Mouse X and Y Position</title>
 		<script>
 			//document.addEventListener("mousedown", handleMove, false);
-			document.onmousedown = function(){getMousePosition(event)}
+			document.onmousedown = function(event){getMousePosition(event)}
 			
 			function MouseEvent(e){
 				if(e){
