@@ -1,0 +1,62 @@
+Basic Style Code
+/*
+Theme Name: Name of theme
+Author: Name of Author
+Author URI: 
+Description: Description of theme
+*/
+
+
+
+Styles and fav icon connection
+		<link href="<?php bloginfo('template_url');?>/favicon.ico" type="image/x-icon" rel="icon" />
+		<link href="<?php bloginfo('template_url');?>/favicon.ico" type="image/x-icon" rel="shortcut icon" /> 
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/reset.css" />
+		<link rel="stylesheet" href="<?php bloginfo('template_url');?>/css/style.css" />
+
+
+
+
+Title code 
+
+<title><?php
+	/*
+	 * Print the <title> tag based on what is being viewed.
+	 */
+	global $page, $paged;
+
+	wp_title( '|', true, 'right' );
+
+	// Add the blog name.
+	bloginfo( 'name' );
+
+	// Add the blog description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		echo " | $site_description";
+
+	// Add a page number if necessary:
+	if ( $paged >= 2 || $page >= 2 )
+		echo ' | ' . sprintf( __( 'Page %s', 'twentyeleven' ), max( $paged, $page ) );
+
+	?></title>
+
+
+
+Post code
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- Display the Title as a link to the Post's permalink. -->
+<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+<!-- Display the Post's Content in a div box. -->
+<div class="entry">
+<?php the_content(); ?>
+</div>
+<?php endwhile; else: ?>
+<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+<?php endif; ?>
+
+
+
+Navigation  code
+<?php wp_nav_menu(); ?>
+

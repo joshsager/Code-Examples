@@ -1,0 +1,55 @@
+
+/*
+ //////////////   S W A T C H E S
+ 
+ 	LIGHT BLUE:  #bdd9f1
+ 	TAN		  :  #dad3c9;
+*/
+
+
+
+/*
+ //////////////   S T R U C T U R E
+*/
+html{background:#dad3c9; font-family: "Bodoni"; overflow: auto ;}
+body{width:800px; margin: 10px auto 0 auto; background: #fff; overflow: auto ;}
+section#navigation{height: 40px; background:#bdd9f1; }
+	section#navigation nav{float: left; width:550px; padding: 10px 20px;}
+form#search-form{width:160px; float: right; margin: 10px 30px 0 0;}
+section#main{width: 320px;float: left; margin: 75px 43px 20px 35px;  }
+aside#sidebar{width:330px;float: left; margin: 65px 20px 20px 43px;}
+	aside#sidebar img{background: #000; width: 153px; height: 135px;}
+	aside#sidebar img:nth-child(odd){background: #ff0; margin: 9px 9px 9px 0;}
+	aside#sidebar img:nth-child(even){background: #f00; margin: 9px 0 9px 9px;}
+
+footer{height: 114px; width: 800px; background: url('cssimg/footer-bg.png')repeat-x; bottom center; position:fixed; bottom:0px;   }
+footer#whale{height: 100px; background: url('cssimg/whale.png') no-repeat bottom right; position:static; bottom: auto; }
+
+
+
+/*
+ //////////////   U T I L I T Y
+*/
+.clear{clear: both;}
+
+
+
+
+/*
+  /////////////   T Y P O G R P H Y  &  D E T A I L S  &  S T Y L E S
+*/
+
+section#navigation nav ul li a{font-size: 24px; color:#fff; font-style: italic; padding: 0 .5em;}
+section#main header h1{font-size: 36px; font-weight: bold; text-align: center; margin-bottom: .4em; }
+section#main header h2{font-size: 18px; font-style: italic; text-align: center; margin-bottom: 1em; }
+section#main header time{font-size: 12px; font-style: italic; text-align: center; margin-bottom: 1em; display: block; }
+section#main p{font-size: 14px; line-height: 1.8em; text-indent: 1.3em; }
+section#navigation ul li{float:left;}
+	form#search-form label{float: left; background: url('cssimg/search.png'); width: 16px; height: 21px; }
+	form#search-form input{float: left; width: 130px; margin:  0 5px;}
+aside p#caption{font-style: italic; font-size: 14px;}
+	aside h3{text-transform: uppercase;}
+hr{height: 18px; width: 320px; background: url('cssimg/hr-bg.png') top center; border: none; opacity: .3;}
+
+#submitButton{display: hidden;}
+
