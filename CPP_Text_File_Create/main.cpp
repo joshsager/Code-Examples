@@ -13,7 +13,7 @@ int main(){
 
 	if(file.fail()){
 		cerr << "Could not create file.";
-		exit(1);
+		exit(EXIT_FAILURE); // Exit or bad things will happen
 	}
 
 	file << "This is a text file" << endl;

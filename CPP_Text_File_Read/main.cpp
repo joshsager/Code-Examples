@@ -14,7 +14,7 @@ int main(){
 	file.open("text.txt"); 
 	if(file.fail()){
 		cerr << "Could not read file.";
-		exit(1); // Exit or bad things will happen
+		exit(EXIT_FAILURE); // Exit or bad things will happen
 	}
 
 	while(true){
