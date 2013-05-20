@@ -22,8 +22,8 @@ function init(){
 	// events
 	window.onmousemove = function(event){onMouseMoveHandler(event);}
 	initCanvas();
-	drawBoard(1);
-	gameState = "loading";
+	drawBoard(20);
+	gameState = "play";
 }
 function loop(){
 	draw();
